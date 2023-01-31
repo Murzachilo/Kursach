@@ -1,0 +1,31 @@
+﻿<Window x:Class="dich.adminMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dich"
+        mc:Ignorable="d"
+        Title="Меню администратора" Height="379" Width="732.6">
+    <Grid Margin="0,0,-6,1">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF10172F" Offset="0.295"/>
+                <GradientStop Color="#FF576FBF" Offset="0.006"/>
+                <GradientStop Color="#FF020305"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="365*"/>
+            <ColumnDefinition Width="32*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Просмотр договоров" HorizontalAlignment="Left" Height="54" Margin="19,65,0,0" VerticalAlignment="Top" Width="299" Click="Button_Click" FontSize="18" Background="{x:Null}" Foreground="White" FontFamily="Arial Rounded MT Bold" BorderBrush="#FFEBE0E0" />
+        <Button Content="Регистрация нового сотрудника" HorizontalAlignment="Left" Height="52" Margin="19,139,0,0" VerticalAlignment="Top" Width="299" Click="Button1_Click" FontSize="18" Background="{x:Null}" Foreground="White" FontFamily="Arial Rounded MT Bold" BorderBrush="#FFEBE0E0" />
+        <Image Margin="368,41,42.6,57.6" Source="/dich;component/free-icon-car-insurance-4599090.png" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Height="56" Margin="658,10,0,0" VerticalAlignment="Top" Width="64" BorderBrush="#FFEA1B1B" Click="Button_Click_1" Grid.ColumnSpan="2">
+            <Button.Background>
+                <ImageBrush ImageSource="/dich;component/manager/free-icon-exit-320140.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

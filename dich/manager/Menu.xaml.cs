@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dich.manager;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,20 @@ namespace dich
         public Menu()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Auto dlg = new Auto();
+            dlg.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow dlg = new MainWindow();
+            dlg.Show();
         }
     }
 }

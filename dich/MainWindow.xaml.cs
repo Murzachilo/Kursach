@@ -41,8 +41,7 @@ namespace dich
                 if (conn.State == ConnectionState.Closed) conn.Open();
 
                 DataTable useresTable = new DataTable();
-                SqlCommand comm = new SqlCommand("SELECT * FROM Сотрудники WHERE Login = '" + textBox1.Text + "' AND Password = '" + textBox2.Password + "' AND IdRole = 0", conn);
-
+                SqlCommand comm = new SqlCommand("SELECT * FROM ПараметрыВхода WHERE Login = '" + textBox1.Text + "' AND Password = '" + textBox2.Password + "' AND IsAdmin = 'True'", conn);
                 SqlDataAdapter adapter = new SqlDataAdapter(comm);
                 comm.ExecuteNonQuery();
                 adapter.Fill(useresTable);
@@ -57,7 +56,7 @@ namespace dich
                 }
                 else
                 {
-                    SqlCommand com = new SqlCommand("SELECT * FROM Сотрудники WHERE Login = '" + textBox1.Text + "' AND Password = '" + textBox2.Password + "'", conn);
+                    SqlCommand com = new SqlCommand("SELECT * FROM ПараметрыВхода WHERE Login = '" + textBox1.Text + "' AND Password = '" + textBox2.Password + "'", conn);
                     DataTable useresTabl = new DataTable();
 
                     SqlDataAdapter adapte = new SqlDataAdapter(com);

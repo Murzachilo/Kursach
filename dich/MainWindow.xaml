@@ -5,13 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dich"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Авторизация" Height="376.4" Width="728.2" Background="#FF1B1919" BorderBrush="#FFF6F6F6" OpacityMask="White" HorizontalAlignment="Left">
     <Grid x:Name="grid1">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="262,236,0,0" VerticalAlignment="Top" Width="206" Height="76"
-                Click="Button_Click" />
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="31" Margin="298,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
-        <PasswordBox x:Name="textBox2" HorizontalAlignment="Left" Height="29" Margin="298,163,0,0" VerticalAlignment="Top" Width="145"/>
-        <Label Content="Login" HorizontalAlignment="Left" Margin="196,104,0,0" VerticalAlignment="Top" Height="31" Width="71"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="196,163,0,0" VerticalAlignment="Top" Height="31" Width="71"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FF10172F" Offset="0.295"/>
+                <GradientStop Color="#FF576FBF" Offset="0.006"/>
+                <GradientStop Color="#FF020305"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Авторизоваться" HorizontalAlignment="Left" Margin="120,236,0,0" VerticalAlignment="Top" Width="206" Height="46"
+                Click="Button_Click" FontSize="18" Background="{x:Null}" Foreground="White" FontFamily="Arial Rounded MT Bold" BorderBrush="#FFEBE0E0" />
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="35" Margin="165,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" FontSize="16" BorderBrush="#FF885F5F" Background="#FF141E51" SelectionBrush="White" Foreground="White"/>
+        <PasswordBox x:Name="textBox2" HorizontalAlignment="Left" Height="35" Margin="165,166,0,0" VerticalAlignment="Top" Width="207" FontSize="16" Background="#FF141E51"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="30,95,0,0" VerticalAlignment="Top" Height="36" Width="115" FontSize="18" Background="{x:Null}" Foreground="#FFDDE2DB" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="30,165,0,0" VerticalAlignment="Top" Height="36" Width="115" FontSize="18" Background="{x:Null}" Foreground="#FFDDE2DB" FontFamily="Arial Rounded MT Bold"/>
+        <Image Margin="410,10,16.6,34.4" Source="free-icon-car-insurance-4599090.png" Stretch="Fill"/>
     </Grid>
 </Window>
